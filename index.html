@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lämpötilamuunnin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="otsikko">
+        <h1>LÄMPÖTILAMUUNNIN</h1>
+    </header>
+    <main class="maincontent" id="maincontent">
+        <form id="muunnin">
+            <select id="muunnos">
+                <option value="celsius-fahrenheit">Celsius -> Fahrenheit</option>
+                <option value="fahrenheit-celsius">Fahrenheit -> Celsius</option>
+            </select>
+                <p>Syötä lämpötila:</p>
+                <input type="number" id="syote" name="syote" required>
+                <button onclick="muunnaLampotila(event)">Muunna</button><br>
+                <input type="radio" id="desimaali1" name="desimaali" value="1" required>
+                <label for="desimaali1">1 desimaali</label><br>
+                <input type="radio" id="desimaali2" name="desimaali" value="2" required>
+                <label for="desimaali2">2 desimaalia</label><br>
+                <input type="radio" id="desimaali3" name="desimaali" value="3" required>
+                <label for="desimaali3">3 desimaalia</label><br>
+        </form>
+        <div class="border"></div>
+        <p class="vastaus" id="vastaus"></p>
+        <img src="ice-cube-4747825_640.jpg" alt="nollapiste" id="nollapiste">
+    </main>
+    <script src="lampotila.js"></script>
+</body>
+
+</html>
