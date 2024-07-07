@@ -1,4 +1,3 @@
-                                                                                                                        //Kommentit omaksi iloksi ja muille avuksi :-)
 let muunnos_valinta, syote, desimaali, vastaus;                                                                         // Alustetaan muuttujat
 
 function celsiusToFahrenheit(celsius, desimaali) {                                                                      // Funktio joka muuntaa celsius asteet fahrenheit asteiksi                                    
@@ -22,7 +21,7 @@ function celsiusToFahrenheit(celsius, desimaali) {                              
 function fahrenheitToCelsius(fahrenheit, desimaali) {                                                                   // Funktio joka muuntaa fahrenheit asteet celsius asteiksi
     let celsius = (fahrenheit - 32) * 5 / 9;                                                                            // Muunnoskaava fahrenheit -> celsius
     if (fahrenheit < -459.67) {                                                                                         // Jos fahrenheit on pienempi kuin absoluuttinen nollapiste, tulostetaan virheilmoitus
-        vastaus.innerText = "Lämpötila ei voi olla alle absoluuttisen nollapisteen!";                                  
+        vastaus.innerText = "Lämpötila ei voi olla alle absoluuttisen nollapisteen!";
         document.getElementById("nollapiste").style.display = "block";                                                  // Näytä kuva kun absoluuttinen nollapiste
         return;
     } else if (desimaali === "1") {                                                                                     // Jos desimaali on 1, tulostetaan vastaus yhdellä desimaalilla
