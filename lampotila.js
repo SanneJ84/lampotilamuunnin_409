@@ -4,6 +4,7 @@ function celsiusToFahrenheit(celsius, desimaali) {                              
     let fahrenheit = celsius * 9 / 5 + 32;                                                                              // Muunnoskaava celsius -> fahrenheit
     if (celsius < -273.15) {                                                                                            // Jos celsius on pienempi kuin absoluuttinen nollapiste, tulostetaan virheilmoitus
         vastaus.innerText = "Lämpötila ei voi olla alle absoluuttisen nollapisteen!";
+        console.log("Aika kylmä!");
         document.getElementById("nollapiste").style.display = "block";                                                  // Näytä kuva kun absoluuttinen nollapiste
         return;
     } else if (desimaali === "1") {                                                                                     // Jos desimaali on 1, tulostetaan vastaus yhdellä desimaalilla      
@@ -22,6 +23,7 @@ function fahrenheitToCelsius(fahrenheit, desimaali) {                           
     let celsius = (fahrenheit - 32) * 5 / 9;                                                                            // Muunnoskaava fahrenheit -> celsius
     if (fahrenheit < -459.67) {                                                                                         // Jos fahrenheit on pienempi kuin absoluuttinen nollapiste, tulostetaan virheilmoitus
         vastaus.innerText = "Lämpötila ei voi olla alle absoluuttisen nollapisteen!";
+        console.log("Aika kylmä!");
         document.getElementById("nollapiste").style.display = "block";                                                  
         return;
     } else if (desimaali === "1") {                                                                                     // Jos desimaali on 1, tulostetaan vastaus yhdellä desimaalilla
