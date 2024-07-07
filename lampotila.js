@@ -22,17 +22,17 @@ function fahrenheitToCelsius(fahrenheit, desimaali) {                           
     let celsius = (fahrenheit - 32) * 5 / 9;                                                                            // Muunnoskaava fahrenheit -> celsius
     if (fahrenheit < -459.67) {                                                                                         // Jos fahrenheit on pienempi kuin absoluuttinen nollapiste, tulostetaan virheilmoitus
         vastaus.innerText = "Lämpötila ei voi olla alle absoluuttisen nollapisteen!";
-        document.getElementById("nollapiste").style.display = "block";                                                  // Näytä kuva kun absoluuttinen nollapiste
+        document.getElementById("nollapiste").style.display = "block";                                                  
         return;
     } else if (desimaali === "1") {                                                                                     // Jos desimaali on 1, tulostetaan vastaus yhdellä desimaalilla
         vastaus.innerText = fahrenheit + " Fahrenheit astetta on " + celsius.toFixed(1) + " Celsius astetta";
-        document.getElementById("nollapiste").style.display = "none";                                                   // Piilota kuva kun normaali lämpötila
+        document.getElementById("nollapiste").style.display = "none";                                                   
     } else if (desimaali === "2") {                                                                                     // Jos desimaali on 2, tulostetaan vastaus kahdella desimaalilla
         vastaus.innerText = fahrenheit + " Fahrenheit astetta on " + celsius.toFixed(2) + " Celsius astetta";
-        document.getElementById("nollapiste").style.display = "none";                                                   // Piilota kuva kun normaali lämpötila
+        document.getElementById("nollapiste").style.display = "none";                                                   
     } else if (desimaali === "3") {                                                                                     // Jos desimaali on 3, tulostetaan vastaus kolmella desimaalilla
         vastaus.innerText = fahrenheit + " Fahrenheit astetta on " + celsius.toFixed(3) + " Celsius astetta";
-        document.getElementById("nollapiste").style.display = "none";                                                   // Piilota kuva kun normaali lämpötila
+        document.getElementById("nollapiste").style.display = "none";                                                   
     }
 }
 
